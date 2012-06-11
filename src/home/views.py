@@ -19,4 +19,24 @@ def tours(request):
     c = Context({'tours_textblock_list':tours_textblock_list,
     })
     return HttpResponse(t.render(c))
+
+def angling(request):
+    home_textblock_list=Home.objects.all()
+    t = loader.get_template('index.html')
+    c = Context({'home_textblock_list':home_textblock_list,
+    })
+    return HttpResponse(t.render(c))
+
+def wildlife(request):
+    home_textblock_list=Home.objects.all()
+    t = loader.get_template('index.html')
+    c = Context({'home_textblock_list':home_textblock_list,
+    })
+    return HttpResponse(t.render(c))
     
+def book(request):
+    home_textblock_list=Home.objects.all()
+    t = loader.get_template('index.html')
+    c = Context({'home_textblock_list':home_textblock_list,
+    })
+    return HttpResponse(t.render(c))
