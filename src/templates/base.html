@@ -10,7 +10,7 @@
 <body>
 	<div id="container">
 	<div id="wrapper">
-		<div id="header"><a href="index.html"><img src="{% static "img/boat_tours_Clew_Bay.jpg" %}" width="940" height="188" border="0" class="container"/></a>
+		<div id="header"><a href="index.html"><img src="{% static "img/boat_tours_Clew_Bay.jpg" %}" width="940" height="188" border="0" id="container"/></a>
 		</div>
 	
 		<div id="main_menu">
@@ -28,13 +28,22 @@
 	</div>		
 	
 	    <div id="content">
+	    <div class="breadcrumb" ID="breadcrumb">Home</div>
 	        {% block content %}{% endblock content %}
 	        
 	    </div>
 	    
 	    <div id="right_side">
-	    	right side
-	    </div>
+	    	{% block topimg %}
+	    	{% endblock topimg %}
+	    	
+	    	{% block review %}
+	    	
+	    	{% endblock review %}
+	    	
+	    	{% block botimg %}
+	    	Image
+	    	{% endblock botimg %}	    </div>
 	    
 	    <div id="footer">
 	    	{% block footer %}

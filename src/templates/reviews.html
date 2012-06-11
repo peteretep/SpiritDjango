@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block review %}
+
+	{% if review %}
+			   
+		{% for r in review %}
+		{{ r.entry }}
+		{% endfor %}
+			   
+		{% else %}
+		   <p>No review available.</p>
+		{% endif %}
+		
+		
+{% endblock review %}

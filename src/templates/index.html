@@ -1,9 +1,9 @@
-{% extends "base.html" %}
+{% extends "reviews.html" %}
 
 {% block content %}
-	{% if home_textblock_list %}
+	{% if textblock_list %}
 			   
-		{% for block in home_textblock_list %}
+		{% for block in textblock_list %}
 		{{ block.textblock|safe }}
 		{% endfor %}
 			   
