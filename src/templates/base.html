@@ -1,0 +1,45 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static "spirit.css" %}"  />
+ 
+    <title>{% block title %}Spirit Adventure Django{% endblock %}</title>
+</head>
+
+<body>
+	<div id="container">
+	<div id="wrapper">
+		<div id="header"><a href="index.html"><img src="{% static "img/boat_tours_Clew_Bay.jpg" %}" width="940" height="188" border="0" class="container"/></a>
+		</div>
+	
+		<div id="main_menu">
+			{% block main_menu %}
+			<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="tours">Tours</a></li>
+			<li><a href="angling.html">Angling</a></li>
+			<li><a href="wildlife.html">Wildlife</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="book.html">Book</a></li>
+			</ul> 
+			{% endblock main_menu %}
+		</div>
+	</div>		
+	
+	    <div id="content">
+	        {% block content %}{% endblock content %}
+	        
+	    </div>
+	    
+	    <div id="right_side">
+	    	right side
+	    </div>
+	    
+	    <div id="footer">
+	    	{% block footer %}
+	    	{% endblock %}
+	    </div>
+	</div>
+</body>
+</html>

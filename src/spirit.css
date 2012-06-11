@@ -1,0 +1,167 @@
+body {
+	background-color:#99CBFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: #25261F;
+	vertical-align:top;
+}
+
+td, th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	color: #333333;
+	vertical-align: top;
+	height:100%;
+}
+#container {
+	margin:auto;
+	max-width:900px;
+	width: 100%;
+	-moz-border-top-right-radius: 15px;
+	-moz-border-top-left-radius:15px;
+	border-top-right-radius: 15px;
+	border-top-left-radius:15px;
+}
+
+#wrapper {
+	max-width:900px;
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	line-height:25px;
+	overflow:hidden;
+	-moz-border-top-right-radius: 15px;
+	-moz-border-top-left-radius:15px;
+	border-top-right-radius: 15px;
+	border-top-left-radius:15px;
+	}
+ul.bullets 
+{
+list-style-type:square;
+}
+
+
+#main_menu ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+
+border-bottom-right-radius: 15px;
+border-bottom-left-radius: 15px;
+}
+
+
+#main_menu li
+{
+float:left;
+max-width:180px;
+width:16.66667%;
+}
+#main_menu a:link, #main_menu a:visited
+{
+display:block;
+width:100%;
+font-weight:bold;
+color:#ffffff;
+background-color:#003873;
+text-align:center;
+padding:0;
+text-decoration:none;
+text-transform:uppercase;
+}
+#main_menu a:hover, #main_menu a:active
+{
+background-color:#f33D00;
+}
+
+#content 
+{
+	background-color:#F2F2F2;
+	width:600px;
+	height:750px;
+	height:600px;
+	border-radius:15px 0px 0px 15px;
+	padding-left:15px;
+	float:left;
+}
+
+#right_side
+{
+	background-color:#F2F2F2;
+	width:270px;
+	height:600px;
+	border-radius: 0px 15px 15px 0px;
+	padding-left:15px;
+	float:left;
+}
+
+.image {
+	border-radius:15px;
+}
+.footerbox {
+background-color:#F2F2F2;
+max-width:900px;
+width:100%;
+height:140px;
+margin-top:10px;
+text-align:right;
+border-radius: 15px;
+}
+.footer {
+vertical-align:top;
+width:300px;
+padding:10px;
+float:right;
+
+}
+.facebook {
+ vertical-align:top;
+ width:200px;
+ padding:15px;
+ float:left;
+}
+
+.programmes {
+  padding-right:15px;
+}
+.breadcrumb {font-size:10px;}
+
+
+#review {
+	font-size:10px;
+	font-style:italic;
+	padding:5px;
+	}
+	
+#blog {
+	height:700px;
+	overflow:auto;
+	margin-right:15px;
+}
+
+div.feedburnerFeedBlock ul {
+margin-left:0;
+padding-left:0;
+list-style-type: none
+}
+
+div.feedburnerFeedBlock ul ul {
+list-style-type: disc;
+}
+
+div.feedburnerFeedBlock ul ol {
+list-style-type: decimal;
+}
+
+/*div.feedburnerFeedBlock {*/
+/*border:2px solid #ddd;*/
+/*background-color:#ffe;*/
+/*padding:12px;*/
+/*}*/
+div.feedburnerFeedBlock ul li span.headline {
+font-weight:bold;
+}

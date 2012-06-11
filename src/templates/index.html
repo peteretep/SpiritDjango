@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{% if home_textblock_list %}
+			   
+		{% for block in home_textblock_list %}
+		{{ block.textblock|safe }}
+		{% endfor %}
+			   
+		{% else %}
+		   <p>No text available.</p>
+		{% endif %}
+		
+{% endblock content %}
+
+

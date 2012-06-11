@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{% if tours_textblock_list %}
+			   
+		{% for block in tours_textblock_list %}
+		{{ block.tours|safe }}
+		{% endfor %}
+			   
+		{% else %}
+		   <p>No text available.</p>
+		{% endif %}
+		
+{% endblock content %}
