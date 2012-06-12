@@ -2,11 +2,11 @@
 
 {% block review %}
 
-	{% if review %}
+	{% if reviews %}
 			   
-		{% for r in review %}
-		{{ r.entry }}
-		{% endfor %}
+		
+		{{ r.entry|random }}
+		
 			   
 		{% else %}
 		   <p>No review available.</p>

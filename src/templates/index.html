@@ -13,4 +13,17 @@
 		
 {% endblock content %}
 
+{% block review %}
+
+	{% if reviews %}
+		{% for r in reviews %}	   
+			{{r.entry}}
+		{% endfor %}
+			   
+		{% else %}
+		   <p>No review available.</p>
+		{% endif %}
+		
+		
+{% endblock review %}
 

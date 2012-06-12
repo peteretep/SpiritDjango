@@ -9,5 +9,6 @@ class Angling (models.Model):
 class Wildlife (models.Model):
     textblock = models.TextField()
 class Book (models.Model):
-    textblock = models.TextField()    
+    textblock = models.TextField()  
+    
 # Create your models here.
