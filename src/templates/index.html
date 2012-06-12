@@ -16,9 +16,7 @@
 {% block review %}
 
 	{% if reviews %}
-		{% for r in reviews %}	   
-			{{r.entry}}
-		{% endfor %}
+		{{reviews.entry}}
 			   
 		{% else %}
 		   <p>No review available.</p>
