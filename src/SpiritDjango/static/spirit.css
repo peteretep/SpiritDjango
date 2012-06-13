@@ -81,7 +81,7 @@ background-color:#f33D00;
 #content 
 {
 	background-color:#F2F2F2;
-	width:600px;
+	width:570px;
 	height:750px;
 	height:600px;
 	border-radius:15px 0px 0px 15px;
@@ -92,7 +92,7 @@ background-color:#f33D00;
 #right_side
 {
 	background-color:#F2F2F2;
-	width:270px;
+	width:300px;
 	height:600px;
 	border-radius: 0px 15px 15px 0px;
 	padding-left:15px;
@@ -132,7 +132,7 @@ float:right;
 
 
 #review {
-	font-size:10px;
+	font-size:12px;
 	font-style:italic;
 	padding:5px;
 	}

@@ -10,7 +10,7 @@
 <body>
 	<div id="container">
 	<div id="wrapper">
-		<div id="header"><a href="index.html"><img src="{% static "img/boat_tours_Clew_Bay.jpg" %}" width="940" height="188" border="0" id="container"/></a>
+		<div id="header"><a href="/"><img src="{% static "img/boat_tours_Clew_Bay.jpg" %}" width="940" height="188" border="0" id="container"/></a>
 		</div>
 	
 		<div id="main_menu">
@@ -34,21 +34,34 @@
 	    </div>
 	    
 	    <div id="right_side">
+	    <p align="center">
 	    	{% block topimg %}
+	    		<img src="{% static "img/fishing_trip_ireland.jpg" %}" alt="Fishing Trip in Clew Bay, Westport, Mayo, Ireland" name="Fishing Trip in Clew Bay, Westport, Mayo, Ireland" width="270" height="200" class="image" /></p>
 	    	{% endblock topimg %}
 	    	
+	    	<div id="review">
 	    	{% block review %}
 	    	
 	    	{% endblock review %}
-	    	
+	    	</div>
 	    	{% block botimg %}
-	    	Image
+	    		<img src="{% static "img/pollack_fishing_ireland.jpg" %}" alt="Pollack fishing in Clew Bay, Westport, Mayo, Ireland" name="Pollack fishing in Clew Bay, Westport, Mayo, Ireland" width="270" height="289" class="image" /></p>
 	    	{% endblock botimg %}	    </div>
+	    </p>
+	 <div class="footerbox" ID="footerbox">
+	<div class="footer" ID="footer">
+     Spirit Adventure<br />
+     Clew Bay, Westport,<br />
+     Mayo, Ireland<br />
+     +353(0)860675833<br />
+     skipper@spiritadventure.net
+ 	</div>
+<div class="facebook" ID="facebook">
+ <div align="left"><a href="http://www.facebook.com" target="_blank"><img src="facebook_button.png" border="0" /></a>	<a href="http://www.twitter.com/" target="_blank"><img src="twitter-button.png" width="50" height="50" border="0" /></a> </div>
+  </div>
 	    
-	    <div id="footer">
-	    	{% block footer %}
-	    	{% endblock %}
-	    </div>
+	</div>    
 	</div>
+	
 </body>
 </html>
