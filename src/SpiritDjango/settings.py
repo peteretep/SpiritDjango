@@ -18,7 +18,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/home/peter/python/SpiritDjango/src/sqlite.db',                      # Or path to database file if using sqlite3.
+        'NAME': '/var/www/sqlite.db',                      # Or path to database file if using sqlite3.
         'USER': 'spirit',                      # Not used with sqlite3.
         'PASSWORD': 'shit boat',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
