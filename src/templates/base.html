@@ -28,17 +28,20 @@
 	</div>		
 	
 	    <div id="content">
-	    <div class="breadcrumb" ID="breadcrumb">Home</div>
+	    	<div id="breadcrumb">Home</div>
+	    	<div id="leftside">
 	        {% block content %}{% endblock content %}
+	        </div>
 	        
-	    </div>
 	    
-	    <div id="right_side">
-	    <p align="center">
+	    
+	    	<div id="right_side">
+	    	<p align="center">
 	    	{% block topimg %}
 	    		<img src="{% static "img/fishing_trip_ireland.jpg" %}" alt="Fishing Trip in Clew Bay, Westport, Mayo, Ireland" name="Fishing Trip in Clew Bay, Westport, Mayo, Ireland" width="270" height="200" class="image" /></p>
 	    	{% endblock topimg %}
 	    	
+	    	Been out with us recently? <a href="/review" >Please write a review.</a>
 	    	<div id="review">
 	    	{% block review %}
 	    	
@@ -46,21 +49,27 @@
 	    	</div>
 	    	{% block botimg %}
 	    		<img src="{% static "img/pollack_fishing_ireland.jpg" %}" alt="Pollack fishing in Clew Bay, Westport, Mayo, Ireland" name="Pollack fishing in Clew Bay, Westport, Mayo, Ireland" width="270" height="289" class="image" /></p>
-	    	{% endblock botimg %}	    </div>
-	    </p>
-	 <div class="footerbox" ID="footerbox">
-	<div class="footer" ID="footer">
-     Spirit Adventure<br />
-     Clew Bay, Westport,<br />
-     Mayo, Ireland<br />
-     +353(0)860675833<br />
-     skipper@spiritadventure.net
- 	</div>
-<div class="facebook" ID="facebook">
- <div align="left"><a href="http://www.facebook.com" target="_blank"><img src="facebook_button.png" border="0" /></a>	<a href="http://www.twitter.com/" target="_blank"><img src="twitter-button.png" width="50" height="50" border="0" /></a> </div>
-  </div>
-	    
+	    	{% endblock botimg %}	    
+	    </p>  
+	    	</div>
+    	</div>
+	  
+	 
+	    <div id="footer">
+	    	{% block footer %}
+	    	
+	    	<div id="addressbox">
+    			Spirit Adventure<br />
+    		 	Clew Bay, Westport,<br />
+    			Mayo, Ireland<br />
+     			+353(0)860675833<br />
+     			skipper@spiritadventure.net
+   			</div>
+	    	{% endblock %}
+	    </div>
+
 	</div>    
+
 	</div>
 	
 </body>

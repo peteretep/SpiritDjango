@@ -1,9 +1,16 @@
 from django.db import models
+from django.forms import ModelForm
+
 
 class Review (models.Model):
     name = models.CharField(max_length=200)
-    email = models.CharField(max_length=200)
-    entry = models.CharField(max_length=500)
+    email = models.EmailField()
+    entry = models.TextField()
+    checked = models.BooleanField()
+    
+class ReviewForm(ModelForm):
+    class Meta:
+        model = Review
+        exclude = 'checked'
     
 
-# Create your models here.

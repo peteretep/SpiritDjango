@@ -28,9 +28,10 @@ td, th {
 #wrapper {
 	max-width:900px;
 	width: 100%;
-	height: 100%;
+
 	font-size: 14px;
 	line-height:25px;
+	
 	overflow:hidden;
 	-moz-border-top-right-radius: 15px;
 	-moz-border-top-left-radius:15px;
@@ -78,22 +79,28 @@ text-transform:uppercase;
 background-color:#f33D00;
 }
 
-#content 
+#content
 {
 	background-color:#F2F2F2;
-	width:600px;
-	height:750px;
-	height:600px;
+	height:100%;
+	min-height:600px;
+	border-radius:15px;
+	overflow:auto;
+}
+
+#leftside 
+{
+	width:570px;
 	border-radius:15px 0px 0px 15px;
 	padding-left:15px;
 	float:left;
+	height:100%;
 }
 
 #right_side
 {
 	background-color:#F2F2F2;
-	width:270px;
-	height:600px;
+	width:300px;
 	border-radius: 0px 15px 15px 0px;
 	padding-left:15px;
 	float:left;
@@ -102,7 +109,24 @@ background-color:#f33D00;
 .image {
 	border-radius:15px;
 }
-.footerbox {
+
+#footer
+{
+	background-color:#F2F2F2;
+	margin-top:10px;
+	border-radius: 15px;
+	max-width:900px;
+	width:100%;
+	float:left;
+}
+
+#addressbox
+{
+	float:right;
+	padding:10px 20px 10px 0px;
+}
+
+#footerbox {
 background-color:#F2F2F2;
 max-width:900px;
 width:100%;
@@ -110,14 +134,12 @@ height:140px;
 margin-top:10px;
 text-align:right;
 border-radius: 15px;
-}
-.footer {
 vertical-align:top;
 width:300px;
 padding:10px;
 float:right;
-
 }
+
 .facebook {
  vertical-align:top;
  width:200px;
@@ -128,11 +150,16 @@ float:right;
 .programmes {
   padding-right:15px;
 }
-.breadcrumb {font-size:10px;}
+
+#breadcrumb 
+{
+	font-size:10px;
+	padding-left:10px;
+}
 
 
 #review {
-	font-size:10px;
+	font-size:12px;
 	font-style:italic;
 	padding:5px;
 	}
